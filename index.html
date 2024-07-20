@@ -1,0 +1,259 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .container{
+            display:flex;
+            justify-content:space-evenly;
+            text-align:center;
+        }
+        .a{
+            height:80px;
+            width:80px;
+            background-color:red;
+            transition: 1s all  ease-in-out;
+        }
+        .a:hover{
+            background-color:blue;
+            transform:scale(1.4);
+        }
+        #x{
+            margin:8px;
+        }
+        .b{
+            height:80px;
+            width:80px;
+            background-color:red;
+            margin:8px;
+            transition: 1s all  ease-in-out;
+        }
+        .b:hover{
+            transform:translate(40px, 80px);
+        }
+        .c{
+            height:80px;
+            width:80px;
+            background-color:red;
+            margin:8px;
+            transition: 1s all  ease-in-out;
+        }
+        .c:hover{
+            transform: rotate(45deg);
+        }
+        .d{
+            height:80px;
+            width:80px;
+            background-color:red;
+            margin:8px;
+            transition: 1s all  ease-in-out;
+        }
+        .d:hover{
+            transform:skew(45deg);
+        }
+        .e{
+            height:80px;
+            width:80px;
+            background-color:red;
+            margin:8px;
+            transition: 1s all  ease-in-out;
+        }
+        .e:hover{
+            transform:rotate(5520deg);
+        }
+        @media (max-width:350px){
+            .container{
+                display:flex;
+                flex-direction:column;
+            }
+        }
+        .box{
+            height:120px;
+            width:120px;
+            background-color:yellow;
+            text-align:center;
+            transform:rotate(45deg);
+        }
+        .u{
+            position:relative;
+            top:50px;
+            display:flex;
+            justify-content:space-around;
+        }
+        .v{
+            height:120px;
+            width:120px;
+            background-color:blue;
+            margin:2px;
+            transform:scaleX(2);
+            text-align:center;
+        }
+    </style>
+    <marquee style="color:red; background-color:yellow; font-size:30px">Transform In CSS</marquee>
+    <br><br>
+    <div class="container">
+        <div class="a" id="x"><h4>Scale</h4></div>
+        <div class="b"><h4>Translate</h4></div>
+        <div class="c"><h4>Rotate</h4></div>
+        <div class="d"><h4>Skew</h4></div>
+        <div class="e"><h4>Rotate</h4></div>
+    </div>
+    <div class="box"><h4 style="transform:rotate(-45deg); position:absolute; top:20px; left:30px">Rotate</h4></div>
+    <div class="u">
+        <div class="v"><h4>Scale</h4></div>
+    </div>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            margin:0px;
+            padding:4px;
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            row-gap: 20px;
+            column-gap:40px;
+            text-align: center;
+        }
+        .u{
+            height:200px;
+            width:200px;
+            background-color:red;
+        }
+        .v{
+            height:200px;
+            width:200px;
+            background-color:blue;
+        }
+        .w{
+            height:200px;
+            width:200px;
+            background-color:green;
+        }
+        .x{
+            height:200px;
+            width:200px;
+            background-color:yellow;
+            transition: all 1s ease-in-out;
+        }
+        .x:hover{
+            transform:rotateX(90deg);
+        }
+        .y{
+            height:200px;
+            width:200px;
+            background-color:darkblue;
+            transition:all 2s ease-in-out;
+        }
+        .z{
+            height:200px;
+            width:200px;
+            background-color:darkred;
+            transition:all 4s ease-in-out;
+        }
+        .z:hover{
+            transform:rotateY(4400deg);
+        }
+        .y:hover{
+            /* transform:rotateX(45deg); */
+            transform:rotateY(90deg);
+        }
+        .f{
+            height:200px;
+            width:200px;
+            background-color: red;
+            transition: all 2s ease-in-out;
+            /* float:left; */
+            float:right;
+        }
+        .f:hover{
+            height:200px;
+            width:200px;
+            transform: rotateZ(45deg);
+            /* float:right; */
+        }
+        .i{
+            height:200px;
+            width:200px;
+            background-color: blue;
+            margin-right:8px;
+            margin-left:8px;
+            transition: all 2s ease-in-out;
+            /* float:left; */
+            float:right;
+        }
+        .i:hover{
+            background-color:green;
+            transform: rotateZ(45deg);
+            transform-origin: 20px;
+        }
+        @media (max-width:800px) {
+            .container{
+                flex-direction:row-reverse;
+                background-color:lightgreen;
+            }
+        }
+        @media (max-width:600px) {
+            .container{
+                background-color:lightcoral;
+                flex-direction:column;
+            }
+        }
+        @media (max-width:400px) {
+            .container{
+                flex-direction:row;
+                background-color:black;
+            }
+        }
+        @media (max-width:300px){
+            .container{
+                background-color:grey;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="u"><h1>1</h1></div>
+        <div class="v"><h1>2</h1></div>
+        <div class="w"><h1>3</h1></div>
+        <div class="x"><h1>4</h1></div>
+        <div class="y"><h1>5</h1></div>
+        <div class="z"><h1>6</h1></div>
+    </div>
+    <div class="f"></div>
+    <div class="i"></div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="PrintDeveloperbyMap()">
+      Console log Students with Map
+    </button>
+    <button onclick="PrintDeveloperbyForEach()">
+      Console log Students with foreach
+    </button>
+    <button onclick="addData()">Console New Data with 4th Employee</button>
+    <button onclick="removeAdmin()">Remove Admin</button>
+    <button onclick="concatenateArray()">concatenateArray</button>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
